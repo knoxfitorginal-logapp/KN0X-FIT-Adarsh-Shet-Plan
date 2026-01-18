@@ -101,7 +101,7 @@
 <body class="text-gray-800 antialiased pb-safe">
 
     <!-- Mobile Header (Sticky & Distinct) -->
-    <div id="mobile-header-bar" class="lg:hidden bg-transparent backdrop-blur-sm p-3 flex justify-between items-center sticky top-0 z-40 border-b border-gray-200">
+    <div id="mobile-header-bar" class="lg:hidden bg-transparent backdrop-blur-sm px-3 py-1 flex justify-between items-center sticky top-0 z-40 border-b border-gray-200">
         <button id="mobile-menu-toggle" class="mobile-menu-toggle text-gray-900 text-2xl active:scale-95 transition-transform p-2 rounded-lg hover:bg-gray-100/50">
             <i class="fa-solid fa-bars"></i>
         </button>
@@ -116,7 +116,7 @@
     </div>
 
     <!-- Mobile Horizontal Scroll Navigation (The "App" Feel) -->
-    <div class="lg:hidden sticky top-[105px] z-30 bg-white/90 backdrop-blur-sm border-b border-gray-200 shadow-sm overflow-x-auto no-scrollbar flex items-center px-2 py-0 h-12">
+    <div class="lg:hidden sticky top-[89px] z-30 bg-white/90 backdrop-blur-sm border-b border-gray-200 shadow-sm overflow-x-auto no-scrollbar flex items-center px-2 py-0 h-12">
         <button data-view="dashboard" class="mobile-tab flex-shrink-0 px-4 h-full flex items-center text-sm font-bold text-gray-500 whitespace-nowrap transition-colors">Dashboard</button>
         <button data-view="week1" class="mobile-tab flex-shrink-0 px-4 h-full flex items-center text-sm font-bold text-gray-500 whitespace-nowrap transition-colors">Week 1</button>
         <button data-view="week2" class="mobile-tab flex-shrink-0 px-4 h-full flex items-center text-sm font-bold text-gray-500 whitespace-nowrap transition-colors">Week 2</button>
@@ -181,7 +181,7 @@
             </div>
             <!-- Version info -->
             <div class="p-4 text-center text-xs text-gray-400 border-t border-gray-200">
-                v1.0.4 Mobile Optimized
+                v1.0.5 Mobile Optimized
             </div>
         </aside>
 
@@ -645,6 +645,11 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     cutout: '70%',
+                    animation: {
+                        duration: 2000,
+                        easing: 'easeOutQuart',
+                        delay: 100
+                    },
                     plugins: {
                         legend: {
                             position: 'bottom',
