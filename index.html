@@ -101,14 +101,14 @@
 <body class="text-gray-800 antialiased pb-safe">
 
     <!-- Mobile Header (Sticky & Distinct) -->
-    <div id="mobile-header-bar" class="lg:hidden bg-white shadow-sm p-3 flex justify-between items-center sticky top-0 z-40 border-b border-gray-200">
-        <button id="mobile-menu-toggle" class="mobile-menu-toggle text-gray-900 text-2xl active:scale-95 transition-transform p-2 rounded-lg hover:bg-gray-100">
+    <div id="mobile-header-bar" class="lg:hidden bg-transparent backdrop-blur-sm p-3 flex justify-between items-center sticky top-0 z-40 border-b border-gray-200">
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle text-gray-900 text-2xl active:scale-95 transition-transform p-2 rounded-lg hover:bg-gray-100/50">
             <i class="fa-solid fa-bars"></i>
         </button>
         <a href="https://kn0x-fit.com/" target="_blank" class="flex items-center">
             <img src="./src/assets/final_logo-removebg-preview (1).png" 
                  alt="KN0X-FIT Logo" 
-                 class="h-10 w-auto"
+                 class="h-20 w-auto"
                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <div class="hidden text-xl font-black text-gray-900 italic tracking-tighter uppercase"><span class="text-red-600">KN0X</span>-FIT</div>
         </a>
@@ -116,7 +116,7 @@
     </div>
 
     <!-- Mobile Horizontal Scroll Navigation (The "App" Feel) -->
-    <div class="lg:hidden sticky top-[64px] z-30 bg-white border-b border-gray-200 shadow-sm overflow-x-auto no-scrollbar flex items-center px-2 py-0 h-12">
+    <div class="lg:hidden sticky top-[105px] z-30 bg-white/90 backdrop-blur-sm border-b border-gray-200 shadow-sm overflow-x-auto no-scrollbar flex items-center px-2 py-0 h-12">
         <button data-view="dashboard" class="mobile-tab flex-shrink-0 px-4 h-full flex items-center text-sm font-bold text-gray-500 whitespace-nowrap transition-colors">Dashboard</button>
         <button data-view="week1" class="mobile-tab flex-shrink-0 px-4 h-full flex items-center text-sm font-bold text-gray-500 whitespace-nowrap transition-colors">Week 1</button>
         <button data-view="week2" class="mobile-tab flex-shrink-0 px-4 h-full flex items-center text-sm font-bold text-gray-500 whitespace-nowrap transition-colors">Week 2</button>
@@ -220,12 +220,12 @@
                             icon: "fa-solid fa-sun",
                             items: [
                                 { name: "Whole Eggs", quantity: "4 (200g)", link: "Boiled Eggs Recipe" },
-                                { name: "Jolada Rotti", quantity: "2 (80g)", link: "Jolada Rotti Recipe North Karnataka" },
+                                { name: "Dosa", quantity: "2 (120g)", link: "Plain Dosa Recipe" },
                                 { name: "Sprouted Moong Salad", quantity: "1 cup (150g)", link: "Sprouted Moong Salad Recipe" },
                                 { name: "Peanut Chutney", quantity: "1 tbsp (15g)", link: "Peanut Chutney Recipe" },
                             ],
                             // Updated with detailed P/C/F breakdown
-                            macros: { p: "42g", c: "70g", f: "40g", kcal: "820" },
+                            macros: { p: "40g", c: "75g", f: "45g", kcal: "850" },
                             micros: "Zinc, Folate, B12, Magnesium, Healthy Fats",
                             alternative: "3 Egg Omelette + 2 slices Whole Wheat Bread + Sprouted Salad"
                         },
@@ -270,7 +270,7 @@
                             time: "Total Daily Intake", 
                             icon: "fa-solid fa-calculator",
                             item: "Daily Average", 
-                            macros: { p: "~132g", c: "~328g", f: "~87g", kcal: "~2660" },
+                            macros: { p: "~130g", c: "~333g", f: "~92g", kcal: "~2690" },
                             micros: "Note: Protein gap exists. Add 2-3 extra egg whites or 50g more soya.", 
                             isTotal: true
                         }
@@ -285,11 +285,11 @@
                             icon: "fa-solid fa-sun",
                             items: [
                                 { name: "Jhunka (Besan Curry)", quantity: "1.5 cups (250g)", link: "Jhunka Recipe North Karnataka" },
-                                { name: "Jolada Rotti", quantity: "2 (80g)", link: "Jolada Rotti Recipe" },
+                                { name: "Dosa", quantity: "2 (120g)", link: "Plain Dosa Recipe" },
                                 { name: "Boiled Eggs", quantity: "3 (150g)", link: "Boiled Eggs Recipe" },
                                 { name: "Raw Onion/Cucumber", quantity: "Small side", link: "Raw Salad Benefits" }
                             ],
-                            macros: { p: "40g", c: "90g", f: "35g", kcal: "850" },
+                            macros: { p: "38g", c: "85g", f: "40g", kcal: "880" },
                             micros: "Fiber, B Vitamins, Choline, Complete Protein",
                             alternative: "Besan Chilla (3) + 3 Boiled Eggs"
                         },
@@ -333,7 +333,7 @@
                             time: "Total Daily Intake", 
                             icon: "fa-solid fa-calculator",
                             item: "Daily Average", 
-                            macros: { p: "~119g", c: "~308g", f: "~91g", kcal: "~2560" },
+                            macros: { p: "~117g", c: "~303g", f: "~96g", kcal: "~2590" },
                             micros: "Fiber intake is high. Ensure 4-5L water intake.", 
                             isTotal: true
                         }
@@ -409,11 +409,11 @@
                             time: "Breakfast",
                             icon: "fa-solid fa-sun",
                             items: [
-                                { name: "Idlis", quantity: "6 (300g)", link: "Soft Idli Recipe" },
+                                { name: "Idlis", quantity: "4 (250g)", link: "Soft Idli Recipe" },
                                 { name: "Sambar", quantity: "1 cup (220g)", link: "Hotel Style Sambar Recipe" },
                                 { name: "Egg Omelet", quantity: "3 Eggs (150g)", link: "Masala Omelette Recipe" }
                             ],
-                            macros: { p: "35g", c: "120g", f: "20g", kcal: "800" },
+                            macros: { p: "34g", c: "112g", f: "20g", kcal: "760" },
                             micros: "Fermented Probiotics, Complete Protein",
                             alternative: "Set Dosa (3) + Coconut Chutney + 3 Eggs"
                         },
